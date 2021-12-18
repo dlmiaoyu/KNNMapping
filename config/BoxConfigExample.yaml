@@ -1,0 +1,90 @@
+%YAML:1.2
+
+IO:
+  sourceImageDir: /home/user/Test/Voronoi/ParkingLot/BoxO/SourceImage
+  ORBSLAMDir: /home/user/Test/Voronoi/ParkingLot/BoxO/ORBSLAM
+  sourceSparsePointCloudDir: /home/user/Test/Voronoi/ParkingLot/BoxO/ORBSLAM
+  poseFileName: /home/user/Test/Voronoi/ParkingLot/BoxO/ORBSLAM/Pose.txt
+  timeStampFileName: /home/user/Test/Voronoi/ParkingLot/BoxO/ORBSLAM/KeyFrameTimeStamp.txt
+  imageDir: /home/user/Test/Voronoi/ParkingLot/BoxO/Image
+  parameterListDir: /home/user/Test/ParameterList
+  pointCloudEvaluationDir: /home/user/Test/Voronoi/ParkingLot/BoxO/PointCloudEvaluation
+  downSampledPointCloudDir: /home/user/Test/Voronoi/ParkingLot/BoxO/DownSampledPointCloud
+  sparsePointCloudDir: /home/user/Test/Voronoi/ParkingLot/BoxO/SparsePointCloud
+  distributionDir: /home/user/Test/Voronoi/ParkingLot/BoxO/Distribution
+  allDistanceDir: /home/user/Test/Voronoi/ParkingLot/BoxO/AllDistance
+  frameDistanceDir: /home/user/Test/Voronoi/ParkingLot/BoxO/FrameDistance
+  referenceMapDir: /home/user/Test/Voronoi/ParkingLot/ReferenceMap
+  mapDir: /home/user/Test/Voronoi/ParkingLot/BoxO/Map
+  mapComparisonDir: /home/user/Test/Voronoi/ParkingLot/BoxO/MapComparison
+  testParameterListDir: /home/user/Test/TestParameterList
+  runTimeDir: /home/user/Test/Voronoi/ParkingLot/BoxO/RunTime
+  pointNumberDir: /home/user/Test/Voronoi/ParkingLot/BoxO/PointNumber
+  isDownSampledPointCloud: 1
+  isOctoMap: 0
+  writeMapFile: 0
+
+ReferenceMap:
+  resMap: 0.1
+  layoutFlag: 2
+
+Camera:
+   width: 1280
+   height: 720
+   K1: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 6.7431225585937500e+02, 0., 6.2646588134765625e+02, 0.,
+          6.7431225585937500e+02, 3.5783316040039062e+02, 0., 0., 1. ]
+   D1: !!opencv-matrix
+      rows: 1
+      cols: 5
+      dt: d
+      data: [ 0., 0., 0., 0., 0. ]
+   K2: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 6.7431225585937500e+02, 0., 6.2646588134765625e+02, 0.,
+          6.7431225585937500e+02, 3.5783316040039062e+02, 0., 0., 1. ]
+   D2: !!opencv-matrix
+      rows: 1
+      cols: 5
+      dt: d
+      data: [ 0., 0., 0., 0., 0. ]
+   R: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 1., 0., 0., 0., 1., 0., 0., 0., 1. ]
+   T: !!opencv-matrix
+      rows: 3
+      cols: 1
+      dt: d
+      data: [ -1.1967628479003906e-01, 0., 0. ]
+
+Factor: 10000.0
+
+Filter:
+  zLStep: 10000
+  zLMin: 80000
+  zLMax: 80000
+  fLStep: 10000
+  fLMin: 40000
+  fLMax: 40000
+
+PointSearch:
+  kStep: 4
+  kMin: 1
+  kMax: 1
+  resSStep: 1
+  resSMin: 1
+  resSMax: 1
+
+Sampling:
+  dist: 4
+  resMap: 0.1
+
+CloudEvaluation:
+  fL: 4

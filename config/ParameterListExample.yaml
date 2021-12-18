@@ -1,0 +1,110 @@
+%YAML:1.2
+
+IO:
+  parameterListDir: /home/user/Test/ParameterList
+
+ImageChannelNumber: 1
+
+StereoSGBM:
+  mDStep: 1
+  mDMin: 0
+  mDMax: 0
+  nDStep: 64
+  nDMin: 80
+  nDMax: 80
+  bSStep: 4
+  bSMin: 3
+  bSMax: 15
+  dMDStep: 1
+  dMDMin: 0
+  dMDMax: 1
+  pFCStep: 10
+  pFCMin: 10
+  pFCMax: 50
+  uRStep: 10
+  uRMin: 5
+  uRMax: 35
+  sWSStep: 200
+  sWSMin: 200
+  sWSMax: 1000
+  sRStep: 1
+  sRMin: 1
+  sRMax: 2
+  mode: true
+
+Factor: 10000.0
+
+Filter:
+  zLStep: 10000
+  zLMin: 80000
+  zLMax: 80000
+  fLStep: 10000
+  fLMin: 40000
+  fLMax: 40000
+
+##################################### Comparison of k-NN and OctoMap #################
+OctoMap:
+  resMpStep: 1000
+  resMpMin: 1000
+  resMpMax: 1000
+  cTMaxStep: 1200
+  cTMaxMin: 9800
+  cTMaxMax: 9800
+  pHStep: 1200
+  pHMin: 5000
+  pHMax: 9800
+  oTStep: 1200
+  oTMin: 200
+  oTMax: 9800
+  pM2Step: 1200
+  pM2Min: 200
+  pM2Max: 3800
+  pMStep: 1200
+  pMMin: 200
+  pMMax: 3800
+  cTMinStep: 1200
+  cTMinMin: 200
+  cTMinMax: 200
+
+########################################## Parameter Study ####################
+#OctoMap:
+#  resMpStep: 1000
+#  resMpMin: 1000
+#  resMpMax: 1000
+#  cTMaxStep: 1200
+#  cTMaxMin: 5000
+#  cTMaxMax: 9800
+#  pHStep: 1200
+#  pHMin: 5000
+#  pHMax: 9800
+#  oTStep: 1200
+#  oTMin: 200
+#  oTMax: 9800
+#  pM2Step: 1200
+#  pM2Min: 200
+#  pM2Max: 3800
+#  pMStep: 1200
+#  pMMin: 200
+#  pMMax: 3800
+#  cTMinStep: 1200
+#  cTMinMin: 200
+#  cTMinMax: 3800
+
+KNNModel:
+  pUStep: 1200
+  pUMin: 200
+  pUMax: 9800
+  pWStep: 1200
+  pWMin: 200
+  pWMax: 9800
+
+PointSearch:
+  kStep: 2
+  kMin: 1
+  kMax: 7
+  resSStep: 1
+  resSMin: 1
+  resSMax: 1
+
+CloudEvaluation:
+  fL: 4

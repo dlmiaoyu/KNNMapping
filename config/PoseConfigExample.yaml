@@ -1,0 +1,6 @@
+%YAML:1.2
+
+trajectoryDir: /home/user/ORBResults
+poseDir: /home/user/Test/Voronoi/ParkingLot/BoxO/Pose
+basePoseFile: /home/user/Test/Voronoi/ParkingLot/BoxO/ORBSLAM/Pose.txt
+num: 243
